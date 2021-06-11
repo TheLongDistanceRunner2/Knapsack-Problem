@@ -14,6 +14,14 @@ public class Item {
         this.quantityOfThisKindOfItem = quantityOfThisKindOfItem;
     }
 
+    public Item(double price, double weight, int numberInArray) {
+        this.price = price;
+        this.weight = weight;
+        this.quotient = price / weight;
+        //==========
+        this.numberInArray = numberInArray;
+    }
+
     public double getWeight() {
         return weight;
     }
