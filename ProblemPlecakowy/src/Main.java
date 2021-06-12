@@ -101,101 +101,6 @@ public class Main {
         produkty.add(p6_2);
         produkty.add(p6_3);
 
-//        // 7 przedmiotów p1:
-//        int iloscP1 = 5;
-//        Item p1_1 = new Item(10.0, 9.0, 0, iloscP1);
-//        Item p1_2 = new Item(10.0, 9.0, 0, iloscP1);
-//        Item p1_3 = new Item(10.0, 9.0, 0, iloscP1);
-//        Item p1_4 = new Item(10.0, 9.0, 0, iloscP1);
-//        Item p1_5 = new Item(10.0, 9.0, 0, iloscP1);
-//
-//        // 5 przedmiotów p2:
-//        int iloscP2 = 6;
-//        Item p2_1 = new Item(8.0, 12.0, 1, iloscP2);
-//        Item p2_2 = new Item(8.0, 12.0, 1, iloscP2);
-//        Item p2_3 = new Item(8.0, 12.0, 1, iloscP2);
-//        Item p2_4 = new Item(8.0, 12.0, 1, iloscP2);
-//        Item p2_5 = new Item(8.0, 12.0, 1, iloscP2);
-//        Item p2_6 = new Item(8.0, 12.0, 1, iloscP2);
-//
-//        // 4 przedmioty p3:
-//        int iloscP3 = 4;
-//        Item p3_1 = new Item(9.0, 10.0, 2, iloscP3);
-//        Item p3_2 = new Item(9.0, 10.0, 2, iloscP3);
-//        Item p3_3 = new Item(9.0, 10.0, 2, iloscP3);
-//        Item p3_4 = new Item(9.0, 10.0, 2, iloscP3);
-//
-//        // 6 przedmiotow p4:
-//        int iloscP4 = 2;
-//        Item p4_1 = new Item(7.0, 8.0, 3, iloscP4);
-//        Item p4_2 = new Item(7.0, 8.0, 3, iloscP4);
-//
-//        // 4 przedmioty p5:
-//        int iloscP5 = 10;
-//        Item p5_1 = new Item(4.0, 7.0, 4, iloscP5);
-//        Item p5_2 = new Item(4.0, 7.0, 4, iloscP5);
-//        Item p5_3 = new Item(4.0, 7.0, 4, iloscP5);
-//        Item p5_4 = new Item(4.0, 7.0, 4, iloscP5);
-//        Item p5_5 = new Item(4.0, 7.0, 4, iloscP5);
-//        Item p5_6 = new Item(4.0, 7.0, 4, iloscP5);
-//        Item p5_7 = new Item(4.0, 7.0, 4, iloscP5);
-//        Item p5_8 = new Item(4.0, 7.0, 4, iloscP5);
-//        Item p5_9 = new Item(4.0, 7.0, 4, iloscP5);
-//        Item p5_10 = new Item(4.0, 7.0, 4, iloscP5);
-//
-//        // 3 przedmioty p6:
-//        int iloscP6 = 8;
-//        Item p6_1 = new Item(6.0, 9.0, 5, iloscP6);
-//        Item p6_2 = new Item(6.0, 9.0, 5, iloscP6);
-//        Item p6_3 = new Item(6.0, 9.0, 5, iloscP6);
-//        Item p6_4 = new Item(6.0, 9.0, 5, iloscP6);
-//        Item p6_5 = new Item(6.0, 9.0, 5, iloscP6);
-//        Item p6_6 = new Item(6.0, 9.0, 5, iloscP6);
-//        Item p6_7 = new Item(6.0, 9.0, 5, iloscP6);
-//        Item p6_8 = new Item(6.0, 9.0, 5, iloscP6);
-
-//    // dodajemy produkty do listy:
-//        produkty.add(p1_1);
-//        produkty.add(p1_2);
-//        produkty.add(p1_3);
-//        produkty.add(p1_4);
-//        produkty.add(p1_5);
-//
-//        produkty.add(p2_1);
-//        produkty.add(p2_2);
-//        produkty.add(p2_3);
-//        produkty.add(p2_4);
-//        produkty.add(p2_5);
-//        produkty.add(p2_6);
-//
-//        produkty.add(p3_1);
-//        produkty.add(p3_2);
-//        produkty.add(p3_3);
-//        produkty.add(p3_4);
-//
-//        produkty.add(p4_1);
-//        produkty.add(p4_2);
-//
-//        produkty.add(p5_1);
-//        produkty.add(p5_2);
-//        produkty.add(p5_3);
-//        produkty.add(p5_4);
-//        produkty.add(p5_5);
-//        produkty.add(p5_6);
-//        produkty.add(p5_7);
-//        produkty.add(p5_8);
-//        produkty.add(p5_9);
-//        produkty.add(p5_10);
-//
-//        produkty.add(p6_1);
-//        produkty.add(p6_2);
-//        produkty.add(p6_3);
-//        produkty.add(p6_4);
-//        produkty.add(p6_5);
-//        produkty.add(p6_6);
-//        produkty.add(p6_7);
-//        produkty.add(p6_8);
-
         // sortujemy tablicę według wag:
         Collections.sort(produkty, new Comparator<Item>() {
             @Override
@@ -257,7 +162,6 @@ public class Main {
 
         System.out.println("value of taken items(C):  " + valueOfTakenItems);
         System.out.print("k vector: [");
-
         for (int i = 0; i < k.size(); i++) {
             if (i >= 0 && i < (k.size() - 1)) {
                 System.out.print(k.get(i) + ", ");
@@ -266,7 +170,7 @@ public class Main {
                 System.out.print(k.get(i));
             }
         }
-
         System.out.println("]");
+
     }
 }
